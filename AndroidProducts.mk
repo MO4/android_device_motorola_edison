@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/full_edison.mk
-ifeq ($(TARGET_PRODUCT),slim_edison)
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/slim.mk
-endif
+
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/full_edison.mk \
+    $(LOCAL_DIR)/du.mk
